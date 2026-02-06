@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Cafe - Cocktail Bar in Maseru</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFFFFF;
+            color: #003366;
+        }
+        header {
+            background-color: #003366;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #FF6B6B;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #FFFFFF;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            background-image: url('hero-image.jpg'); /* Placeholder: Add a hero image of the bar */
+            background-size: cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .menu-item {
+            display: flex;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #FF6B6B;
+            padding-bottom: 10px;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #003366;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #FF6B6B;
+            color: #FFFFFF;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #003366;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>News Cafe</h1>
+        <p>Cocktail Bar in Maseru</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#reservations">Reservations</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home" class="hero">
+        <div>
+            <h2>Welcome to News Cafe</h2>
+            <p>Relax with our signature cocktails and delicious bites in the heart of Maseru.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>News Cafe is Maseru's premier cocktail bar, offering a cozy atmosphere with modern interior design. Enjoy our stylish lounge with comfortable seating and ambient lighting.</p>
+        <img src="interior1.jpg" alt="Interior Design" style="width:100%; max-width:600px;"> <!-- Placeholder: Interior picture -->
+        <img src="interior2.jpg" alt="Interior Design" style="width:100%; max-width:600px;"> <!-- Placeholder: Another interior picture -->
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <h3>Drinks</h3>
+        <div class="menu-item">
+            <img src="cocktail1.jpg" alt="Signature Cocktail"> <!-- Placeholder: Drink image -->
+            <div>
+                <h4>Maseru Mojito</h4>
+                <p>Fresh mint, lime, rum, and soda. M150</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="cocktail2.jpg" alt="Cocktail"> <!-- Placeholder: Drink image -->
+            <div>
+                <h4>News Negroni</h4>
+                <p>Gin, Campari, sweet vermouth. M180</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="beer.jpg" alt="Beer"> <!-- Placeholder: Drink image -->
+            <div>
+                <h4>Craft Beer</h4>
+                <p>Local lager or ale. M120</p>
+            </div>
+        </div>
+        <h3>Food</h3>
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger"> <!-- Placeholder: Food image -->
+            <div>
+                <h4>Classic Burger</h4>
+                <p>Beef patty with fries. M200</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="salad.jpg" alt="Salad"> <!-- Placeholder: Food image -->
+            <div>
+                <h4>Caesar Salad</h4>
+                <p>Romaine, croutons, parmesan. M150</p>
+            </div>
+        </div>
+        <div class="menu-item">
+            <img src="wings.jpg" alt="Wings"> <!-- Placeholder: Food image -->
+            <div>
+                <h4>Spicy Wings</h4>
+                <p>Buffalo wings with dipping sauce. M180</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="interior1.jpg" alt="Interior">
+            <img src="cocktail1.jpg" alt="Cocktail">
+            <img src="burger.jpg" alt="Food">
+            <img src="interior2.jpg" alt="Interior">
+            <img src="cocktail2.jpg" alt="Cocktail">
+            <img src="salad.jpg" alt="Food">
+        </div>
+    </section>
+
+    <section id="reservations">
+        <h2>Make a Reservation</h2>
+        <form id="reservationForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+            <input type="date" id="date" required>
+            <input type="time" id="time" required>
+            <input type="number" id="guests" placeholder="Number of Guests" min="1" required>
+            <textarea id="message" placeholder="Special Requests"></textarea>
+            <button type="submit">Reserve Now</button>
+        </form>
+        <p id="confirmation" style="display:none; color:#FF6B6B;">Reservation submitted! We'll confirm via email.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Address: 123 Main Street, Maseru, Lesotho</p>
+        <p>Phone: +266 123 4567</p>
+        <p>Email: info@newscafe.ls</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 News Cafe. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('reservationForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Simulate form submission (replace with real backend)
+            document.getElementById('confirmation').style.display = 'block';
+            // In a real setup, send data to a server or email service
+        });
+    </script>
+</body>
+</html>

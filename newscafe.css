@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5DC;
+    color: #333;
+}
+
+header {
+    background-color: #8B4513;
+    color: white;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
